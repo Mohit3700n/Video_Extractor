@@ -15,8 +15,7 @@ def extract_link(url: str):
         'quiet': True,
         'skip_download': True, # Video download nahi karni hai, bas link chahiye
         'no_warnings': True,
-        'nocheckcertificate': True,
-        'extractor_args': {'youtube': ['client=android,ios']}
+        'cookiefile': 'cookies.txt'
     }
     
     try:
